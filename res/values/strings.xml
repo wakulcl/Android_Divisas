@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DivisasCL</string>
+    <string name="action_about">Acerca de</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="msgBuscando">Obteniendo indicadores del día</string>
+    <string name="msgValoresAntiguos">Valores válidos al: </string>
+    
+    <string name="txtCantidad">Cantidad</string>
+    <string name="txtEnviar">Enviar</string>
+    <string name="txtUSD">USD</string>
+    <string name="txtEUR">EUR</string>
+    <string name="txtCLP">CLP</string>
+    <string name="txtUF">UF</string>
+    <string name="txtUTM">UTM</string>
+    <string name="txtCreditosTitulo">DIVISAS CL</string>
+    <string name="txtCreditosAutor">Autor: Cristóbal Sánchez</string>
+	<string name="txtCreditosTexto">Esta aplicación ha sido realizada sin fines de lucro\n</string>
+	<string name="txtCreditosAgradecimientos">Los indicadores diarios son proporcionados por el sitio Indicadores del Día (http://indicadoresdeldia.cl) y están bajo licencia CreativeCommons.\n\nSe utiliza la librería ksoap2-android como cliente SOAP (https://code.google.com/p/ksoap2-android).\n\nPara el manejo de pestañas fue utilizada la librería ViewPagerIndicator (http://viewpagerindicator.com) de Jake Wharton la cual está bajo licencia Apache Licence v2.0.\n\nEl ícono de la aplicación es cortesía de Christián Pino.</string>
+    <string name="title_activity_about_me">Acerca de</string>
+    <string name="action_settings">Configuración</string>
+
+	<string-array name="arrayDivisas">
+        <item>DOLAR (USD)</item>
+        <item>EURO (EUR)</item>
+	</string-array>
+	<string-array name="arrayIndicadores">
+        <item>UF</item>
+        <item>UTM</item>
+	</string-array>
+
+</resources>

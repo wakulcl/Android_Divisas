@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutMeActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical">
+
+	    <TextView
+	        android:id="@+id/txtTitulo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txtCreditosTitulo"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/txtAutor"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txtCreditosAutor" />
+		
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+
+		    <ImageView
+		        android:id="@+id/imgIdo"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:src="@drawable/ido" />
+
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:weightSum="2">
+
+	   		    <ImageView
+			        android:id="@+id/imgMail"
+			        android:layout_weight="1"
+			        android:layout_width="32dp"
+			        android:layout_height="32dp"
+			        android:src="@drawable/email" />
+	   		    
+	   		    <ImageView
+			        android:id="@+id/imgLinkedin"
+			        android:layout_weight="1"
+			        android:layout_width="32dp"
+			        android:layout_height="32dp"
+			        android:src="@drawable/linkedin" />   		    
+		    </LinearLayout>
+
+		</LinearLayout>
+		
+		<TextView
+	        android:id="@+id/txtCreditosAutor"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:text="@string/txtCreditosTexto" />
+
+		<TextView
+	        android:id="@+id/txtCreditosAgradecimientos"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txtCreditosAgradecimientos" />
+
+	</LinearLayout>
+
+</ScrollView>

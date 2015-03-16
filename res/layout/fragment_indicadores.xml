@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+	android:background="@color/android_blue"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- SELECT INDICADOR -->
+    <LinearLayout
+        android:background="@drawable/customshape"
+		android:layout_marginBottom="10dp"
+		android:weightSum="2"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spnIndicadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/arrayIndicadores"/>
+
+        <TextView
+            android:id="@+id/txtIndicador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+		    android:gravity="right"
+		    android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>        
+    </LinearLayout>
+
+    <!-- INDICADOR to CLP -->
+    <LinearLayout
+        android:background="@drawable/customshape"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:weightSum="2"
+		android:layout_marginBottom="10dp">
+        <!-- COLUMNA INPUT DIVISA -->
+		<LinearLayout
+		    android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+		    android:layout_weight="1">
+	        <TextView
+	            android:id="@+id/txtTituloInputIndicador"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txtUF"
+	            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    <EditText
+		        android:id="@+id/editInputIndicador"
+	            android:layout_width="match_parent"
+	            android:inputType="phone"
+	            android:digits="0123456789"
+	            android:layout_height="wrap_content"/>
+		</LinearLayout>
+		<!-- COLUMNA OUTPUT CLP -->
+		<LinearLayout
+		    android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"		    
+		    android:layout_weight="1">
+	        <TextView
+	            android:id="@+id/txtTituloOutputCLP"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txtCLP"
+	            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    <EditText
+		        android:id="@+id/editOutputCLP"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"/>
+		</LinearLayout>        
+    </LinearLayout>
+	
+	<!-- CLP to DIVISA -->
+    <LinearLayout
+        android:background="@drawable/customshape"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:weightSum="2"
+		android:layout_marginBottom="10dp">
+		<!-- COLUMNA INPUT CLP -->
+		<LinearLayout
+		    android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"		    
+		    android:layout_weight="1">
+	        <TextView
+	            android:id="@+id/txtTituloInputIndicadorCLP"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txtCLP"
+	            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    <EditText
+		        android:id="@+id/editInputIndicadorCLP"
+	            android:layout_width="match_parent"
+	            android:inputType="phone"
+	            android:digits="0123456789"
+	            android:layout_height="wrap_content"/>
+		</LinearLayout>
+		<!-- COLUMNA OUTPUT INDICADOR -->
+		<LinearLayout
+		    android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"		    
+		    android:layout_weight="1">
+	        <TextView
+	            android:id="@+id/txtTituloOutputIndicador"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txtCLP"
+	            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    <EditText
+		        android:id="@+id/editOutputIndicador"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"/>
+		</LinearLayout>        
+    </LinearLayout>
+</LinearLayout>
